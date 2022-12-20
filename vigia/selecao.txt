@@ -1,0 +1,1 @@
+SELECT * FROM tabpastas WHERE cliente_tabclientes = 5

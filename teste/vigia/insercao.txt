@@ -1,0 +1,8 @@
+o que vai como parâmetro para inserção: INSERT 
+        INTO tabtaxaspadrao  
+        (profissional_tabpessoas,valor,int_status) 
+        VALUES 
+        (?,?,?) -> 42#@#0#@#1
+42
+0
+1

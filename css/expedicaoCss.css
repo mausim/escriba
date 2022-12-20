@@ -1,0 +1,29 @@
+/*----GRID UPLOAD --- */
+.claGridExpe{
+    display: grid;
+  grid-template-areas:
+  'numI numI stat stat obsE obsE'
+  'btnE btnE btnE btnE btnE btnE';
+    gap: 1px;
+    background-color:#E8E8E8;/*grey*/
+    padding: 3px;
+  }
+  
+.claGridExpe > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+      padding: 10px;
+  
+  }
+.claExpeId{
+grid-area:numI;  
+}
+.claExpeStatus{
+grid-area:stat;  
+}
+.claExpeObs{
+grid-area:obsE;  
+}
+.claExpedBtn{
+grid-area:btnE;  
+}

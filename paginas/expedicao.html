@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando pedido da Expedição</title>
+    <link rel="stylesheet" href="../css/expedicaoCss.css">
+    <link rel="stylesheet" href="../css/uploadCss.css">
+    <link rel="stylesheet" href="../cssBoots413/bootstrap.min.css">
+</head>
+<body>
+    <div class="claGridExpe">
+        <div class="claExpeId">
+        <label>
+            Id do pedido
+            <span id="idSpaExpIdPedido"></span>
+        </label>
+        </div>
+        <div class="claExpeStatus">
+        <label>
+            Alterar para 
+            <select id="idSelExpStatuspedido" class="form-control">
+                <option value="1">Rascunho</option>
+                <option value="2">Pendente</option>
+                <option value="3" selected>Atendido</option>
+                <option value="7">Cancelado</option>
+            </select>
+        </label>
+    </div>
+    <div class="claExpeObs">
+        <label>
+            Observações
+            <textarea id="idTAExpObsPedido"></textarea>
+        </label>
+        </div>
+        <div class="claExpedBtn">
+        <label>
+            <br>
+            <button type="button" id="idBtnExpSalvarPedido" class="btn btn-warning">Salvar</button>
+        </label>
+        </div>
+    </div><!-- grid-->
+    <script src="../js/jQuery351.js"></script>
+    <script src="../jquery_ui_1121/jquery-ui.min.js"></script><!--dialog-->
+    <script src="../jsBoots413/bootstrap.min.js"></script>
+    <script src="../jquery_ui_1121/jquery-ui.min.js"></script><!--dialog-->
+    <script src="../js/meuJs.js"></script>
+    <script src="../js/expedicaoJS.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /><!--dialog-->
+</body>
+</html>

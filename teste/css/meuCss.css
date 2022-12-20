@@ -1,0 +1,1549 @@
+:root {
+    --minhaCorVermelha: #FF0000;
+    --minhaCorAzul: #0000FF;
+    --alturaTitulo: 10vh;
+    --alturaBotoes: 7vh;
+    --alturaCorpo: calc(80vh - var(--alturaTitulo) - var(--alturaBotoes));
+}
+@font-face {
+    font-family: 'minhaFonteCinzel';
+    src: url("/fonts/cinzel/Cinzel-Regular.otf");
+}
+
+.claGridTimTab {
+    display: grid;
+  grid-template-areas:
+  'lblT lblT lblT lblT'
+  'btnT btnT btnD btnD'
+  'tabT tabT tabT tabT'; 
+    gap: 1px;
+    background-color:#96e7f1;/*grey*/
+    padding: 3px;
+  }
+  .claGridTimTab > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+      padding: 10px;
+    }
+  .claTimTabLbl{
+grid-area:lblT;
+  }
+.claTimTabBtnT{
+    grid-area:btnT;
+}
+.claTimTabBtnD{
+    grid-area:btnD;
+}
+.claTimTabTab{
+grid-area:tabT;
+}
+/* --- */
+
+.claBackgroundCapa{
+background-image: url("../imagens/bi-capa2.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /*	
+  box-shadow: 0 0 1px 1px white inset;
+    padding: 0px 0px 0px 0px;
+    */
+
+}
+
+.claLogo {
+    width: 55px;
+    height: 55px;
+    padding: 3px;
+    
+    /*border: 1px solid;
+    
+    box-shadow: 5px 5px #888888;
+    */
+}
+
+.claLogineSenhaImagens{
+    width: 38px; 
+    height: 38px;
+    padding: 4px;
+}
+
+.claVideoChamadaBtn{
+    width: 25px; 
+    height: 25px;
+    
+}
+
+.claUser {
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+}
+
+.claBtnEntrar{
+        width: 90px;
+        height: 30px;
+        border-radius: 10px;
+        border-color: #c2c2c2;
+        background-color: rgb(77, 77, 77);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+        color:white;
+    }
+    
+    .claBtnEntrar:hover{
+    background-color: #8b8b8b; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+}
+
+.claBtnAbasDashboard{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border-color: rgb(181, 182, 255);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 3px 10px 0 rgba(255, 255, 255, 0.19);
+    color:rgb(13, 15, 129);
+    font-family: 'Segoe UI';
+    font-size: 90%;
+    font-weight: 700;
+    margin-right: 80px;
+}
+
+.claBtnAbasDashboard:hover{
+background-color: #d5def8; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+}
+
+.claBtnSubmit{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border-color: #ffffff;
+    background-color: #01962e;
+
+}
+
+.claBtnEntrarLargo{
+    width: 110px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(77, 77, 77);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+}
+
+.claBtnEntrarLargo:hover{
+background-color: #8b8b8b; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+} 
+
+.claBtnMapaPesq{
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(10, 3, 97);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+}
+
+.claBtnMapaPesq:hover{
+background-color: #0e4dc2; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+} 
+
+.claBtnAzulMaior{
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(10, 3, 97);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+}
+
+.claBtnAzulMaior:hover{
+background-color: #0e4dc2; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+} 
+
+
+.claBtnVermelhoMaior{
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(75, 4, 10);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+}
+
+.claBtnVermelhoMaior:hover{
+background-color: #f73838; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+} 
+
+
+
+.salvarAlteracao{
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(77, 77, 77);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+}
+
+.salvarAlteracao:hover{
+background-color: #8b8b8b; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+}   
+
+.claBtnCinzas{
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:black;
+}
+
+.claBtnCinzas:hover{
+background-color: #8b8b8b; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+}   
+
+.claBtnCinzasMaior{
+    width: 280px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(238, 238, 238);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:black;
+}
+
+.claBtnCinzasMaior:hover{
+background-color: #8b8b8b; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+} 
+
+.claBtnFaleConosco{
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    border-color: #c2c2c2;
+    background-color: rgb(77, 77, 77);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+    font-family: 'Segoe UI';
+}
+
+.claBtnFaleConosco:hover{
+background-color: #8b8b8b; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+}
+
+
+@font-face {
+    font-family: 'minhaFonteCandara';
+    src: url("/fonts/candara/Candara.ttf");
+}
+.claFlexCliente{
+    display:grid;/* isto é o importante para o grid funcionar.*/
+    grid-template-areas:
+    'cliente cliente cliente cliente cliente cliente';
+    grid-template-rows:50px;
+      grid-gap: 1px;
+      border-radius: 5px;
+      margin:10px;
+      text-align: left;
+}
+
+.claAcompanhamentoDeProcessos{
+    background-color:white;
+    border-radius: 25px;
+    margin: 3%;
+}
+
+.claAcompanhamentoDeProcessosCabecalho{
+    margin-left: 10px;
+}
+
+.claAcompanhamentoDeProcessosRadios{
+    margin-left: 10px; 
+}
+
+.idTabAssuntoAcompProcessos{
+    width: 400px;
+}
+
+.idTabDataAcompProcessos{
+    margin-left: 30px;
+    
+}
+
+
+#idDivFormCliReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+}
+#idDivFormPesReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+#idDivRotuloDash{
+    margin:10px;
+    text-align: left;
+}
+#idDivRotuloPessoa{
+    margin:10px;
+    text-align: left;
+}
+/* ------------------------ */
+.claFlexDash{
+    display:grid;/* isto é o importante para o grid funcionar.*/
+    grid-template-areas:
+    'rotulo rotulo rotulo rotulo rotulo rotulo'
+    'cliente cliente cliente cliente cliente cliente'
+    'andancli andancli andancli andancli andancli andancli'
+    'andapraz andapraz andault andault honoapr honoapr'
+    'honorec honorec despapr despapr despree despree' 
+    'ts ts tsBaix tsBaix crono crono';
+    grid-template-rows: 50px 80px 180px 180px 180px;
+      grid-gap: 1px;
+      margin:30px;
+      border-radius: 5px;
+      /*
+      background-color: rgb(226, 226, 226);
+      */
+}    
+.grid-borda{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: rgb(19, 16, 109);
+}   
+.grid-dash-rotulo{
+    grid-area:rotulo;
+    text-align:left;
+    padding:2px;
+    border-radius: 5px;
+    
+    /*
+    background-color: orange;
+    */
+}
+.grid-dash-btn1{
+    grid-area:btngeral;
+    text-align:center;
+    padding:2px;
+}
+.grid-dash-cli{
+    grid-area:cliente;
+    width: 650px;
+    margin-bottom: 30px;
+}
+
+.claBotoesAbas{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid-dash-ambito{
+    grid-area:ambito;
+}
+.grid-dash-andacli{
+    grid-area:andancli;
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);;
+    text-align: center;
+    opacity: 80%;
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;
+}
+.grid-dash-andapraz{
+    grid-area:andapraz;
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);;
+    text-align: center;
+    opacity: 80%;
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;
+
+}
+.grid-dash-andault{
+    grid-area:andault;
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);;
+    text-align: center;
+    opacity: 80%;
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;
+}
+.grid-dash-honoapr{
+    grid-area:honoapr;
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);;
+    text-align: center;
+    opacity: 80%; 
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;    
+}
+.grid-dash-honorec{
+    grid-area:honorec; 
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);;
+    text-align: center;
+    opacity: 80%;  
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;
+}
+.grid-dash-despapr{
+    grid-area:despapr; 
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);;
+    text-align: center;
+    opacity: 80%; 
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;  
+}
+.grid-dash-despree{
+    grid-area:despree; 
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);;
+    text-align: center;
+    opacity: 80%;  
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;
+}
+.grid-dash-ts{
+    grid-area:ts;
+    background-color: #ffffff;
+    border-color: #f35454;
+    text-align: center;
+    opacity: 80%;
+    border-radius: 25px;
+    font-size: 125%;
+    color:#f35454;
+    font-weight: 500;
+       
+}
+.grid-dash-tsBaix{
+    grid-area:tsBaix;
+    background-color: #ffffff;
+    border-color: #0a0857;
+    text-align: center;
+    opacity: 80%;  
+    border-radius: 25px; 
+    font-size: 125%;
+    color:#0a0857;
+    font-weight: 500;
+}
+.grid-dash-crono{
+    grid-area:crono;
+    background-color: #ffffff;
+    border-color: rgb(8, 10, 155);
+    text-align: center;
+    opacity: 80%;
+    border-radius: 15px;
+    font-size: 125%;
+    color:rgb(13, 15, 129);
+    font-weight: 700;    
+}
+
+.titulosDash{
+    text-align: center;
+}
+.claElementoCentralizado{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.canvasGraficoTs{
+    /*
+    margin-top: auto;   
+    margin-left: auto;
+       margin-right: auto;
+       */
+    background-color: #ffffff;
+    opacity: 80%;   
+}
+
+.claCorpo {
+    height: var(--alturaCorpo);
+}
+.claCorFundo{
+    background-color: rgb(160, 203, 214);
+}
+
+.claGridMenuInicial {
+    display: grid;
+}
+.claDivLogo {font-family: "minhaFonteCinzel"; margin-top: 2%; font-size: 200%; grid-area: 1 / 1 / 2 / 2; }
+.claDivLogin { font-family: 'Segoe UI'; grid-area: 1 / 2 / 2 / 4; }
+
+
+
+.claGridCorpoCapa{
+display: grid;
+font-family: 'Segoe UI';
+position: fixed;
+margin-right: 30%;  
+}
+.claDivTextoCapa { margin-top: 8%; margin-left: 8%; grid-area: 1 / 1 / 2 / 2; }
+.claDivFaleConosco {margin-top: 2%; margin-left: 8%; grid-area: 2 / 1 / 3 / 2; }
+.claTxtCorpoCapa {font-size: 130%;}
+
+.claGridBemVindo{
+       color: #06034e; 
+        font-family: 'Segoe UI';
+        margin:auto; 
+        margin-right: 2%;
+        text-align: right;
+}
+.claNavSessao{
+    font-size: 75%;
+}
+.claBemVindo{
+font-size: 70%;
+margin-top: 7px;
+margin-bottom: 15px;
+}
+
+
+#idDivLogout{
+    font-family: 'Segoe UI';
+    
+    padding: 3px;
+/*
+    background-color: rgb(164, 182, 136);
+*/
+}
+.claMenuBotoes {
+display:flex;
+grid-area: 'botao1 botao2 botao3 botao4 botao5 botao6 botao7 botao8 botao9 botao10 botao11 botao12';
+grid-template-rows: 80px;
+grid-gap: 1px;
+justify-content: center;
+}
+
+
+.claBotoesPrincipais{
+    width: 115px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: #aaaaaa;
+    background-color: rgb(92, 92, 92);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+    font-size: 80%;
+    font-family: 'Segoe UI';
+}
+
+.claBotoesPrincipais:hover{
+background-color: #9b9b9b; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+} 
+
+
+
+
+.claBtnSair{
+    width: 45px;
+    height: 25px;
+    border-radius: 15px;
+    border-color: #888888;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:#0a0857;
+    font-size: 80%;
+    font-family: 'Segoe UI';
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.claBtnSair:hover{
+background-color: #f3d0d0; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+}
+
+.claBtnVideoChamada{
+    width: 50px;
+    height: 35px;
+    border-radius: 10px;
+    border-color: #aaaaaa;
+    background-color: rgb(92, 92, 92);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:white;
+    font-size: 80%;
+    font-family: 'Segoe UI';
+}
+
+.claBtnVideoChamada:hover{
+background-color: #9b9b9b; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+} 
+
+.claBtnVideosPlataformas{
+    width: 60px;
+    height: 30px;
+    border-radius: 15%;
+    border-color: #ffffff;
+    background-color: rgb(63, 63, 63);
+    color: #ffffff;
+    font-size: 80%;
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+
+.claBtnVideosPlataformas:hover{
+    background-color: #bac8e5; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+
+
+.claBtnAbasGrafico{
+    width: 45px;
+    height: 25px;
+    border-radius: 15px;
+    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    color:#0a0857;
+    font-size: 80%;
+    font-family: 'Segoe UI';
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+}
+
+.claBtnAbasGrafico:hover{
+background-color: #d8d8d8; 
+
+transition: 0.5s;
+
+opacity: 0.8;
+}
+
+
+
+.claBtnInterno {
+    font-size: 70%;
+    margin: 5px;
+}
+
+.claRotuloFormulario {
+    text-align: left;
+    font-family: 'Segoe UI';
+}
+
+.claRotuloFormularioPessoas{
+    text-align: center;
+    font-family: 'Segoe UI';
+}
+
+.claRotuloFormularioPessoas2{
+    text-align: center;
+    font-family: 'Segoe UI';
+    color: #1247a8;
+}
+
+.claRotuloFormularioPessoas3{
+    text-align: center;
+    font-family: 'Segoe UI';
+    color: #9b4c4c;
+}
+
+.claRotuloFormularioPessoas4{
+    text-align: center;
+    font-family: 'Segoe UI';
+    color: #5ea389;
+}
+
+.claRotuloFormularioPessoas5{
+    text-align: center;
+    font-family: 'Segoe UI';
+    color: #dfa15b;
+}
+
+.claTextoCentro{
+    text-align: center; 
+    font-weight: 800;
+}
+.claRotuloDireita{
+    text-align:right;
+}
+
+.claAlinhaDireita {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.claFormularios {
+    border-radius: 5px;
+    padding: 5px;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #dbdbdb;
+}
+
+.claFoto {
+    width: 80px;
+    height: 80px;
+    border: 1px solid;
+    padding: 3px;
+    box-shadow: 5px 5px #888888;
+}
+
+.claBlocoFaturamento {
+    background-color: rgb(191, 234, 245);
+    padding: 3px;
+    border-radius: 3px;
+}
+.claBorda{
+    border-style: solid;
+    border-width: thin;
+    border-radius: 2px;
+    margin:2px;
+}
+#idDivFormPesPes {
+background-image: url("../imagens/degrade-cinza2.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+}
+#idDivFormPesPes input {
+    font-size: 70%;
+}
+#idDivFormPesPes select {
+    font-size: 70%;
+}
+
+#idDivFormSistPess{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;     
+}
+#idDivFormCliPes{
+background-image: url("../imagens/degrade-cinza2.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover; 
+}
+
+#idDivFormSistCli{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
+
+
+#idDivFormCliPes input {
+    font-size: 70%;
+}
+#idDivFormCliPes select {
+    font-size: 70%;
+}
+
+#idDivFormPasReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    }
+
+    #idDivFormPasPes{
+        background-image: url("../imagens/degrade-cinza2.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        }
+
+#idDivFormPasReg input {
+    font-size: 70%;    
+}
+#idDivFormPasReg select {
+    font-size: 70%;    
+}
+
+#idSpaPasRegNum{
+    font-size: 120%;
+    font-weight: bolder;
+}
+#idSpaCronoRegNumero{
+    font-size: 120%;
+    font-weight: bolder;
+}
+
+
+#idDivFormPasSistPastaA{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:5px;
+    border-radius:4px;
+    margin:2px;
+}
+#idDivFormPasSistAreaA{
+    background-color:#d3d3d3;
+    padding:5px;
+    border-radius:4px;
+    margin:2px;
+}
+
+#idDivFormCronoReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormCronoPes{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormProReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormProPes{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormProAnda{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+small{
+    color:blue;
+}
+#idDivForm{
+    font-family: "minhaFonteCinzel";
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;   
+}
+.claTituloMiudo{
+    font-weight: bolder;
+}
+
+.claTextoGrande{
+    font-size:150%;
+}
+
+#mapid {
+    height:300px;
+}
+#idNavAlmoPesBlA{
+    font-size:100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* -- grid alto ---------------------------- ***************** GRID */
+.claGridProcOrgAlto{
+    display:grid;
+    grid-template-areas: 
+    'titu titu titu titu titu titu';
+grid-gap: 10px;
+
+}
+.claGridProcOrgAlto > div{
+    padding: 20px;
+ }
+ .claProcOrgTitulo{
+    grid-area:titu;
+}
+
+ /* -- fim do grid Alto--*/
+ /* ----------------grid Alteração de órgãos ***************** GRID */
+ #idDivFormSistProc{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormTimReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormTimPes{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormSistTime{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormDespReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormDespPes{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormSistDesp{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormFatuReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormFatuPes{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormSistFatu{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormExpeReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormExpePes{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormExpeAdm{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+#idDivFormAlmoReg{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormAlmoPes{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormAlmoComp{
+    background-image: url("../imagens/degrade-cinza4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormAlmoAdm{
+    background-image: url("../imagens/degrade-cinza.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#idDivFormAlmoForn{
+    background-image: url("../imagens/degrade-cinza2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ .claGridProcOrg{
+    display:grid;
+    grid-template-areas: 
+    'orgj orgj orgj orgj orgj orgj'
+    'tit2 tit2 tit2 tit2 tit2 tit2'
+    'nome nome nome grau grau salv' ;
+grid-gap: 5px;
+
+}
+.claGridProcOrg > div{
+    padding: 5px;
+    
+ }
+
+.claProcOrgJaReg {
+    grid-area:orgj; 
+    text-align:center;
+}
+.claProcOrgNov{
+    grid-area:nome;
+    flex:1;
+}
+.claProcOrgTit2{
+    grid-area:tit2;
+}
+.claProcOrgGrau{
+    grid-area:grau;
+}
+.claProcOrgSalv{
+    grid-area:salv; 
+}
+/* -- fim do grid dos processos --*/
+/* ----- grid doos processos subdivisão ----- GRID ****************  */
+.claGridProcDiv{
+    display:grid;
+    grid-template-areas: 
+    'titu titu titu titu titu titu'
+    'pert pert dive nome nome salv';
+grid-gap: 5px;
+background-color: rgba(132, 200, 209, 0.2);
+}
+.claGridProcDiv > div {
+    padding: 20px;
+    
+}
+.claProcDivTit{
+    grid-area:titu; 
+}
+.claProcDivOrgPert{
+    grid-area:pert; 
+}
+.claProcDivOrgDivExist{
+    grid-area:dive;
+}
+.claProcDivNomeDiv{
+    grid-area:nome;
+}
+.claProcDivNomeSalv{
+    grid-area:salv;
+}
+
+/* fim do grid de subdivisão --*/
+
+/* ----- grid da administração de despesas ----- GRID ****************  */
+.claGridSistDesp{
+    display:grid;
+    grid-template-areas: 
+    'clie clie past past mate mate'
+    'dati datf incl stat stat salv'
+    'tabe tabe tabe tabe tabe tabe';
+grid-gap: 5px;
+
+}
+.claGridSistDesp > div {
+    padding: 10px;
+    
+}
+.claSistDespCli{
+    grid-area:clie; 
+}
+.claSistDespPas{
+    grid-area:past; 
+}
+.claSistDespPesMat{
+    grid-area:mate; 
+}
+.claSisDespPesDai{
+    grid-area:dati; 
+}
+.claSisDespPesDaf{
+    grid-area:datf; 
+}
+.claSisDespPesInc{
+    grid-area:incl; 
+}
+.claSisDespPesSta{
+    grid-area:stat;     
+}
+.claSisDespPesSalv{
+    grid-area:salv; 
+}
+.claSistDespPesTab{
+    grid-area:tabe; 
+}
+/* ----- fim do grid da administração de despesas ---- */
+/* ----- grid da administração Faturamento ----- GRID ****************  */
+.claGridFatuAdm{
+    display:grid;
+    grid-template-areas: 
+    'gera gera gera gera gera gera'
+    'sepa sepa sepa sepa sepa sepa'
+    'clie clie clie clie clie clie'
+    'radi radi radi radi radi radi'
+    'tabe tabe tabe tabe tabe tabe';
+grid-gap: 5px;
+
+}
+.claGridFatuAdm > div {
+    padding: 10px;
+    
+}
+.claFatuAdmPendentesGeral{
+    grid-area:gera; 
+}
+.claFatuAdmSeparador{
+    grid-area:sepa;
+}
+.claFatuAdmClientes{
+    grid-area:clie; 
+}
+.claFatuAdmRadios{
+    grid-area:radi; 
+}
+.claFatuAdmTabela{
+    grid-area:tabe; 
+}
+
+/* ----- fim do grid da administração de faturamento ---- */
+/*----GRID SEDEX --- */
+.claGridSEDEX {
+    display: grid;
+  grid-template-areas:
+  'tipo tipo form form'
+  'peso comp larg altu'
+  'orig dest maop arar'
+  'calc avis avis avis' 
+  'tabe tabe tabe tabe'; 
+    gap: 1px;
+    background-color:#E8E8E8;/*grey*/
+    padding: 3px;
+  }
+  
+  .claGridSEDEX > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+      padding: 10px;
+  
+  }
+  .claSedexTipo{
+  grid-area:tipo;
+  }
+  .claSedexFormato{
+  grid-area:form;
+  }
+  .claSedexPeso{
+  grid-area:peso;
+  }
+  .claSedexComprimento{
+  grid-area:comp;
+  }
+  .claSedexLargura{
+  grid-area:larg;
+  }
+  .claSedexAltura{
+  grid-area:altu;
+  }
+  .claSedexOrigem{
+  grid-area:orig;
+  }
+  .claSedexDestino{
+  grid-area:dest;
+  }
+  .claSedexMP{
+  grid-area:maop;
+  }
+  .claSedexAR{
+  grid-area:arar;
+  }
+  .claSedexCalcular{
+  grid-area:calc;
+  }
+  .claSedexAviso{
+  grid-area:avis;
+  }
+  .claSedexTabela{
+  grid-area:tabe;
+  }
+  /* fim do grid Sedex */
+    /* --- demais configurações */
+#idDivHDash{
+    margin-top:50px;
+}
+#idTabCorSedTabela {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #idTabCorSedTabela td, #idTabCorSedTabela th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #idTabCorSedTabela th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+  #idTabCorSedTabela th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  
+  .ui-widget-header,.ui-state-default, ui-button{  
+    background:#b9cd6d;  
+    border: 1px solid #b9cd6d;  
+    color: #FFFFFF;  
+    font-weight: 800;  
+ }  
+.claTAPDF{
+visibility: hidden;
+}
+/* ---- */
+
+.claGridTECons{
+display: grid;
+grid-template-areas:
+'titu titu titu titu'
+'rotu rotu rotu rotu'
+'clie clie past chec'
+'tabe tabe tabe tabe'
+'tit2 tit2 tit2 tit2'
+'nid2 cli2 pas2 pro2'
+'val2 val2 chk2 btn2'; 
+    gap: 1px;
+    background-color:#daf3ab;/*grey*/
+    padding: 3px;
+}
+.claGridTECons > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 10px;
+
+}
+.claTEConsTit{
+grid-area:titu;    
+}
+.claTEConsRot{
+grid-area:rotu;   
+}
+.claTEConsCli{
+grid-area:clie;    
+}
+.claTEConsPasta{
+grid-area:past;    
+}
+.claTEConsChk{
+grid-area:chec;        
+}
+.claTEConsTab{
+grid-area:tabe;    
+}
+.claTEConsTit2{
+grid-area:tit2;
+}
+.claTEConsId2{
+grid-area:nid2;    
+}
+.claTEConsCli2{
+grid-area:cli2;    
+}
+.claTEConsPas2{
+grid-area:pas2;
+}
+.claTEConsProf2{
+grid-area:pro2;    
+}
+.claTEConsVal2{
+grid-area:val2;    
+}
+.claTEConsChk2{
+grid-area:chk2;    
+}
+.claTEConsBtn2{
+grid-area:btn2;    
+}
+
+
+
+/* ------ GRID Fornecedores --*/
+.claGridAlmoForn{
+    display: grid;
+    grid-template-areas:
+    'cpfc nome nome emai telf cepf'
+    'tipl logr nume comp bair cida'
+    'esta pais nomc nomc telc celc'
+    'stat btns avif avif avif avif'; 
+        gap: 1px;
+        background-color:#daf3ab;/*grey*/
+        padding: 3px;
+}
+.claGridAlmoForn > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 10px;
+}
+.claAlmoFornCpfCnpj{
+    grid-area:cpfc;    
+}
+.claAlmoFornNome{
+    grid-area:nome;
+    display: flex;
+    flex-flow: column nowrap;
+    }
+.claAlmoFornEmail{
+grid-area:emai;    
+}
+.claAlmoFornTelef{
+grid-area:telf;
+}
+.claAlmoFornCEP{
+grid-area:cepf;
+}
+.claAlmoFornTipoLog{
+grid-area:tipl;
+}
+.claAlmoFornLog{
+grid-area:logr;
+}
+.claAlmoFornNum{
+grid-area:nume;
+}
+.claAlmoFornComp{
+grid-area:comp;
+}
+.claAlmoFornBai{
+grid-area:bair;
+}
+.claAlmoFornCid{
+grid-area:cida;    
+}
+.claAlmoFornEst{
+grid-area:esta;    
+}
+.claAlmoFornPais{
+grid-area:pais;
+}
+.claAlmoFornContato{
+grid-area:nomc;    
+display: flex;
+flex-flow: column nowrap;
+}
+.claAlmoFornTelCon{
+grid-area:telc;
+}
+.claAlmoFornCelCon{
+grid-area:celc;    
+}
+claAlmoFornStatus{
+    grid-area:stat;        
+}
+.claAlmoFornSalvar{
+grid-area:btns;    
+}
+.claAlmoFornAviso{
+grid-area:avif; 
+display: flex;
+flex-flow: column nowrap;   
+}
+/* ---- fim do grid do fornecedor ---*/
+.claGridAlterPedMat{
+    display: grid;
+    grid-template-areas:
+    'incA incA incP incP modi modi'
+    'tabe tabe tabe tabe tabe tabe'; 
+        gap: 1px;
+        background-color:#daf3ab;/*grey*/
+        padding: 3px;
+}
+.claGridAlterPedMat > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 10px;
+}
+.claAlterPedIncA{
+grid-area:incA;    
+}
+.claAlterPedIncP{
+grid-area:incP;    
+}
+.claAlterPedMod{
+grid-area:modi;
+}
+.claAlterPedTab{
+grid-area: tabe;    
+}
+/*  fim do grid Material -- */
+/* --- GRID DA CRONOLÓGICA --- */
+.claGridCronoPes{
+    display: grid;
+    grid-template-areas:
+    'anoC clie clie clie todo past'
+    'tabe tabe tabe tabe tabe tabe'; 
+        gap: 1px;
+        background-color:#daf3ab;/*grey*/
+        padding: 3px;
+}
+.claGridCronoPes > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    padding: 10px;
+}
+.claCronoPesAno{
+    grid-area:anoC;
+}
+.claCronoPesCli{
+grid-area: clie;
+}
+.claCronoPesTod{
+grid-area:todo;    
+}
+.claCronoPesPas{
+grid-area:past;    
+}
+.claCronoPesTab{
+grid-area:tabe;
+}
+/* --- fim da crono ----------*/

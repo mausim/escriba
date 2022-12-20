@@ -1,0 +1,5 @@
+SELECT id,pessoa,sigla,acesso_tabacessos 
+            FROM tabpessoas 
+            WHERE  sigla = 'ALLAN'  
+            AND senha COLLATE latin1_general_cs = 'allan' 
+            AND int_status=2

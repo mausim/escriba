@@ -1,0 +1,904 @@
+.claGridNLRE {
+    background-color: #DCDCDC;
+    text-align: left;
+          padding: 5px;
+          display: grid;
+    
+    }
+    
+    
+    .claGridNLRE > div {
+    display: grid;
+    background-color:white;
+    gap: 10px; padding:5px;
+    }
+    
+    
+    .claDINLRE { grid-area: 1 / 1 / 2 / 2; }
+    .claDFNLRE { grid-area: 1 / 2 / 2 / 3; }
+    .claFANLRE { grid-area: 1 / 3 / 2 / 4; }
+    .claEXNLRE { grid-area: 1 / 4 / 2 / 5; }
+    /*.claAvisoNLRE { grid-area: 2 / 1 / 3 / 4; }*/
+    .claTBNLRE { grid-area: 2 / 1 / 3 / 5; }
+    /*.claTBNLRE { grid-area: 3 / 1 / 4 / 5; }*/
+    
+    
+    
+    /*.claGridNLRE{
+    display:grid;
+    grid-template-areas: 
+    'dain dafi fatu exec acsv acsv'
+    'avis avis avis avis avis avis'
+    'filt filt filt filt filt filt'
+    'tabe tabe tabe tabe tabe tabe';
+    grid-gap:5px;
+    }
+    .claGridNLRE > div{
+      padding: 20px;
+    }
+    .claDINLRE{
+     grid-area:dain;
+        background-color: #FAFAD2;
+    border: 2px solid black;
+    border-radius: 35px 14px;
+    }
+    .claDFNLRE{
+     grid-area:dafi;
+        background-color: #FAFAD2;
+    border: 2px solid black;
+    border-radius: 35px 14px;
+    }
+    .claFANLRE{
+     grid-area:fatu;
+        background-color: #FAFAD2;
+    border: 2px solid black;
+    border-radius: 35px 14px;
+    }
+    .claEXNLRE{
+     grid-area:exec;
+        background-color: #FAFAD2;
+    border: 2px solid black;
+    border-radius: 35px 14px;
+    }
+    .claCSNLRE{
+    grid-area:acsv;
+       background-color: #FAFAD2;
+    border: 2px solid black;
+    border-radius: 35px 14px;
+    }
+    .claFiltroNLRE{
+    grid-area:filt;
+       background-color: #FAFAD2;
+    border: 2px solid black;
+    border-radius: 35px 14px;
+    }
+    .claAvisoNLRE{
+    grid-area:avis;
+       background-color: #FAFAD2;
+    border: 2px solid black;
+    border-radius: 35px 14px;
+    }
+    .claTBNLRE{
+    grid-area:tabe;
+    }
+    */
+    /* ---------fim do grid 1 PRINCIPAL -----------*/
+    /* ---GRID RATEIOS FEITOS ----*/
+    .claGridRateiosFeitos{
+    display:grid;
+    grid-template-areas: 
+    'titu titu titu titu'
+    'dain dafi capt bota'
+    'tart tart tart tart'
+    'rota rota rota rota'
+    'resu resu resu resu';
+    grid-gap:5px;
+    background-color: blue;
+    }
+    .claGridRateiosFeitos > div{
+    background-color: white;
+      padding: 5px;
+    }
+    .claRTTit{
+    grid-area:titu;
+    }
+    .claRTDataInicial{
+    grid-area:dain;
+    }
+    .claRTDataFinal{
+    grid-area:dafi;
+    }
+    .claRTBP{
+    grid-area:capt;
+    }
+    .claRTBtn{
+    grid-area:bota;
+    }
+    .claRTTab{
+    grid-area:tart;
+    }
+    .claRTRotuloTab{
+    grid-area:rota;
+    }
+    .claRTResumo{
+    grid-area:resu;
+    }
+    /* ---fim grid rateios feitos ---*/
+    /* ------grid 2 SUGESTÃO E DETALHE---------------*/
+    .claGridNLRERateio{
+    display:grid;
+    grid-template-areas: 
+    'ro ro ro dr dr dr'
+    'ad ad ad de de de'
+    'su su su de de de'
+    'tf tf tf de de de'
+    'al al al al al al'
+    'to to to to to to';
+    grid-gap:5px;
+    }
+    .claGridNLRERateio > div{
+    background-color: white;
+      padding: 5px;
+    }
+    .claTBNLRAROTULO {
+     grid-area: ro;
+    }
+    .claNLRAINCLUIRADV{
+     grid-area: ad;
+    }
+    .claNLRATRANSF{
+     grid-area: tf;
+    }
+    .claNLRATABSUG{
+     grid-area: su;
+    }
+    .claNLRATABSUGALERTA{
+     grid-area: al;
+     margin:5px;
+    }
+    .claNLRATABSUGTOPO{
+    grid-area:to;
+    }
+    .claTBNLREDETROTULO{
+     grid-area: dr;
+    }
+    .claTBNLREDET{
+     grid-area: de;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /* ---------fim do grid 2 SUGESTÃO E DETALHE---*/
+    /* --- grid 3 ADMIN -- */
+    /*
+    .claDivGridAdmin{
+    display:grid;
+    grid-template-areas: 
+    'bp bp bp bp bp bp'
+    'da op bt be ts ts';
+    grid-gap:5px;
+    }
+    .claDivGridAdmin > div{
+    background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    }
+    .claAdmBP{
+     grid-area: bp;
+    }
+    .claAdmData{
+     grid-area: da;
+    }
+    .claAdmOper{
+    grid-area: op;
+    }
+    .claAdmBtn{
+     grid-area: bt;
+    }
+    .claAdmSubBtn{
+     grid-area: be;
+    }
+    .claAdmSubTab{
+     grid-area: ts;
+    }
+    */
+    /* --- fim do grid 3 admin --- */
+    #idTabNLRENL {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabNLRENL td, #idTabNLRENL th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabNLRENL tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabNLRENL tr:hover {background-color: white;}
+    
+    #idTabNLRENL th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabNLRENL th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* -----fim da tabela principal -- */
+    #idTabNLTRANSF {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabNLTRANSF td, #idTabNLTRANSF th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabNLTRANSFtr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabNLTRANSF tr:hover {background-color: white;}
+    
+    #idTabNLTRANSF th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      /*background-color: #004646;*/
+      background-color:#76EEC6;
+      color: white;
+    }
+    #idTabNLTRANSF th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* -----fim da tabela transferência -- */
+    #idTabNLRENLTSubst {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabNLRENLTSubst td, #idTabNLRENLTSubst th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabNLRENLTSubst tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabNLRENLTSubst tr:hover {background-color: #ddd;}
+    
+    #idTabNLRENLTSubst th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabNLRENLTSubst th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* --- fim da tabela de notas de substitutos --*/
+    #idTabNLRENLRA {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabNLRENLRA td, #idTabNLRENLRA th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabNLRENLRA tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabNLRENLRA tr:hover {background-color: #ddd;}
+    
+    #idTabNLRENLRA th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabNLRENLRA th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* --- fim da tabela de rateio --*/
+    #idTabNLRENLDET {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabNLRENLDET td, #idTabNLRENLDET th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabNLRENLDET tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabNLRENLDET tr:hover {background-color: #ddd;}
+    
+    #idTabNLRENLDET th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabNLRENLDET th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* ---- fim da tabela de detalhe de TS --*/
+    #idTabNLTRANSFFeito {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabNLTRANSFFeito td, #idTabNLTRANSFFeito th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabNLTRANSFFeito tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabNLTRANSFFeito tr:hover {background-color: #ddd;}
+    
+    #idTabNLTRANSFFeito th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabNLTRANSFFeito th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* ---- fim da tabela transf parcial --*/
+    #idTabAdmSubSubs {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabAdmSubSubs td, #idTabAdmSubSubs th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabAdmSubSubs tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabAdmSubSubs tr:hover {background-color: #ddd;}
+    
+    #idTabAdmSubSubs th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabAdmSubSubs th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* ------ fim da tabela da área do administrador substitutos ---*/
+    /* ----------******* INÍCIO DE DEFINIÇÕES GERAIS ---********* --*/
+    .claAlinhaDireita{
+    text-align:right;
+    }
+    /*
+    #idSpaRotuloNLRE{
+     writing-mode: vertical-lr; 
+    }
+    */
+    #idArtNLREDHidden{
+    display:none;
+    }
+    #idSelNLREAdvs{
+    margin-bottom:10px;
+    }
+    .claComBorda{
+    padding:10px;
+    outline: #DDDDDD solid 2px;
+    border-radius:10px;
+    border-color:#003e3e;
+    margin:10px;
+    }
+    #idArtNLRAAdv{
+    background-color: #ffffff;
+    }
+    #idArtNLRETransf{
+    background-color: #defaef;
+    }
+    #idArtNLRASUGTAB{
+    background-color: #ffffff;
+    }
+    #idSelNLRETransf{
+    margin-bottom:10px;
+    }
+    /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_loader */
+    /* Safari */
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    
+      #idDivNLRESpinner{
+        border: 10px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 10px solid #136c46;
+        width: 30px;
+        height: 30px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+      }
+    #idDivRDSpinner{
+        border: 10px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 10px solid #136c46;
+        width: 15px;
+        height: 15px;
+        -webkit-animation: spin 2s linear infinite; /* Safari */
+        animation: spin 2s linear infinite;
+    }
+    
+      
+      
+      .executar {
+        width: 130px;
+        height: 30px;
+        border-radius: 100px;
+        border-color: #003c3c;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .executar:hover{
+    background-color: #b3ffff; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+    
+      .claBtnFaturaRA {
+        width: 150px;
+        height: 50px;
+        border-radius: 40px;
+        border-color: #df4800;
+        background-color: white;
+        color: #004040;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .claBtnFaturaRA:hover{
+    background-color: #ffead5; 
+    
+    transition: 0.2s;
+    
+    opacity: 0.8;
+    }
+    
+    
+    
+    
+    
+      .admJobExec {
+        width: 350px;
+        height: 40px;
+        border-radius: 10px;
+        border-color: #003c3c;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .admJobExec:hover{
+    background-color: #b3ffff; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+    
+      .FecharadmJobExec {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        border-color: #750000;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .FecharadmJobExec:hover{
+    background-color: #ffcaca; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+    
+    
+    
+      .AttListaCaptador {
+        width: 300px;
+        height: 30px;
+        border-radius: 100px;
+        border-color: #003c3c;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .AttListaCaptador:hover{
+    background-color: #b3ffff; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+    
+      .Pesquisa {
+        width: 530px;
+        height: 40px;
+        border-radius: 10px;
+        border-color: #003c3c;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .Pesquisa:hover{
+    background-color: #b3ffff; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+    
+    
+      .CancelarTransf {
+        width: 290px;
+        height: 35px;
+        border-radius: 10px;
+        border-color: #006262;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .CancelarTransf:hover{
+    background-color: #ffcece; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+    
+      .FecharX {
+        width: 80px;
+        height: 30px;
+        border-radius: 2px;
+        border-color: white;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+        margin-left:-100px;
+    }
+    
+    .FecharX:hover{
+    background-color: #ffe8e8; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+      .voltar {
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        border-color: white;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+        margin-left:-100px;
+    }
+    
+    .voltar:hover{
+    background-color: #ffe8e8; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    
+    
+      .incluirlista {
+        width: 130px;
+        height: 40px;
+        border-radius: 100px;
+        border-color: #003c3c;
+        background-color: white;
+        color: #008B8B;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
+    }
+    
+    .incluirlista:hover{
+    background-color: #b3ffff; 
+    
+    transition: 0.5s;
+    
+    opacity: 0.8;
+    }
+    /*--GRID ADMIN CHEFES --*/
+    .gridAdmChefes {
+    display:grid;
+    grid-template-areas:
+    'titu titu titu titu titu titu' 
+    'atua tabe tabe advs advs advs';
+      gap: 5px;
+      background-color:#90EE90;
+      /*background-image: url("/w_ucrg_nlequipe/resources/images/pexels-erik-mclean-6159732.jpg");*/
+        background-repeat: no-repeat;
+      padding: 10px;
+    
+    }
+    .gridAdmChefes > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    }
+    .claAdmCTitulo{
+    grid-area:titu;
+    }
+    .claAdmCBotaoAtualiza{
+    grid-area: atua; 
+    }
+    .claAdmCTabela {
+    grid-area: tabe; 
+    }
+    .claAdmCAdv{
+    grid-area: advs; 
+    }
+    
+    /*--fim grid admin chefes */
+    /*--GRID ADMIN BRUTO --*/
+    .claGridAdmBruto {
+    display:grid;
+    grid-template-areas:
+    'titu titu titu titu'
+    'fatu caso escr rece'
+    'brut liqu cjob salv'
+    'avis avis avis rese'
+    'btnv btnv btnv btnv'
+    'tabe tabe tabe tabe';
+      gap: 5px;
+    background-color: #2196F3;
+      padding: 10px;
+    
+    }
+    .claGridAdmBruto > div {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    }
+    .claBrutoTitulo{
+    grid-area:titu;
+    }
+    .claBrutoFatura{
+    grid-area:fatu;
+    }
+    .claBrutoCaso{
+    grid-area: caso; 
+    }
+    .claBrutoEscr {
+    grid-area: escr; 
+    }
+    .claBrutoReceb{
+    grid-area: rece; 
+    }
+    .claBrutoBruto{
+    grid-area: brut; 
+    }
+    
+    .claBrutoLiq{
+    grid-area: liqu; 
+    }
+    .claBrutoJob{
+    grid-area: cjob; 
+    }
+    .claBrutoSalvar{
+    grid-area: salv; 
+    }
+    .claBrutoAviso{
+    grid-area: avis;
+    }
+    .claBrutoReset {
+    grid-area:rese;
+    }
+    .claBrutoVerTabela{
+    grid-area: btnv;
+    }
+    .claBrutoTabela{
+    grid-area:tabe;
+    }
+    /*--fim grid admin chefes */
+    /* -- grid das tranferências por valor */
+    .claGridTValor{
+    display:grid;
+    grid-template-areas:
+    'titu titu titu titu titu titu'
+    'capt fatu caso escr reci recf'
+    'pesq pesq pesq pesq pesq pesq'
+    'tabe tabe tabe tabe tabe tabe'
+    'rese rese rese rese rese rese';
+      gap: 5px;
+    background-color: rgb(255,127,80);
+      padding: 10px;
+    
+    }
+    .claGridTValor > div {
+      background-color: rgba(255,250,205, 0.8);
+      padding: 20px;
+    }
+    .claTValorTitulo{
+    grid-area:titu;
+    }
+    .claTValorBP{
+    grid-area:capt;
+    }
+    .claTValorFatura{
+    grid-area:fatu;
+    }
+    .claTValorPasta{
+    grid-area:caso;
+    }
+    .claTValorEsc{
+    grid-area:escr;
+    }
+    .claTValorRecebInicial{
+    grid-area:reci;
+    }
+    .claTValorRecebFinal{
+    grid-area:recf;
+    }
+    .claTValorPesq{
+    grid-area:pesq;
+    }
+    .claTValorTabela{
+    grid-area:tabe;
+    }
+    .claTValorReset{
+    grid-area:rese;
+    }
+    /* -- fim do grid das transferência por valor */
+    /*---tabela de valores parcelados */
+    #idTabTValorTabela {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabTValorTabela td, #idTabTValorTabela th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabTValorTabela tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabTValorTabela tr:hover {background-color: white;}
+    
+    #idTabTValorTabela th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabTValorTabela th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /*---FIM DA tabela de valores parcelados */
+    /* ---- tabela de rateios feitos -- */
+    #idTabRTRateio {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #idTabRTRateio td, #idTabRTRateio th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabRTRateio tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabRTRateio tr:hover {background-color: white;}
+    
+    #idTabRTRateio th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabRTRateio th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* --- fim da tabela de rateios feitos --- */
+    /* --- tabela de resumo dos rateios feitos ----*/
+    #idTabRTResumo {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      /* width: 100%;*/
+    }
+    
+    #idTabRTResumo td, #idTabRTResumo th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #idTabRTResumo tr:nth-child(even){background-color:#E0EEE0; }
+    
+    #idTabRTResumo tr:hover {background-color: white;}
+    
+    #idTabRTResumo th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    text-align: center;
+      background-color: #004646;
+      color: white;
+    }
+    #idTabRTResumo th {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    /* ---- fim da tabela de resumo dos rateios feitos  ---*/
