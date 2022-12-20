@@ -1,0 +1,6 @@
+Quantidade de elementos no array: 2 na sql: UPDATE tabts 
+              SET data_edicao = now(), taxa_padrao = ? 
+                   WHERE profissional_tabpessoas = ? 
+              AND int_status = 2
+Valor da vez: 0
+Valor da vez: 41

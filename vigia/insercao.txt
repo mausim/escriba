@@ -1,0 +1,9 @@
+o que vai como parâmetro para inserção: INSERT INTO tablembretes  
+            (lembrete,data_inicio,data_final,tipo,redator_tabpessoas,participantes)
+               VALUES (?,?,?,?,?,?) -> antes do enter -- após o enter#@#2022-11-11 13:16#@#2022-11-11 13:26#@#1#@#1#@#
+antes do enter -- após o enter
+2022-11-11 13:16
+2022-11-11 13:26
+1
+1
+

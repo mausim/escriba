@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload de foto</title>
+    <link rel="stylesheet" type="text/css" href="../css/uploadCss.css">
+    <link rel="stylesheet" type="text/css" href="../cssBoots413/bootstrap.min.css">
+</head>
+<body>
+    <div id="idDivDialogUpload" title="Upload de foto">
+        <div class="claGridUpload">
+            <div class="claUpAdver">
+                <h5 style="color:red;">Atenção: A fotos tem de estar no formato .png</h5>
+            </div>
+            <form method="post" action="/phpPaginas/phpUpload.php" enctype="multipart/form-data">
+                <div class="claUpSigla">
+                    <label>Sigla a associar ao arquivo:
+                        <input type="text" id="idTxtSigla" name="namTxtUPAdvSigla" readonly>
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <input type="file" name="namFilUPAdvFoto" class="form-control" />
+                    </label>
+                </div>
+                    <div class="claUpSubmit">
+                        <label>
+                            <button type="submit" class="btn btn-warning" title="Clique aqui para executar o upload" value="Submit">Executar</label>
+                        </label>
+                    </div>
+            </form>
+        </div>
+        <!--grid upload-->
+      </div><!-- idDivDialogUpload -->
+      <script src="../js/jQuery351.js"></script>
+      <script src="../jquery_ui_1121/jquery-ui.min.js"></script><!--dialog-->
+      <script src="../jsBoots413/bootstrap.min.js"></script>
+      <script src="../jquery_ui_1121/jquery-ui.min.js"></script><!--dialog-->
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" /><!--dialog-->
+      <script src="../js/uploadJs.js"></script><!--dialog-->
+</body>
+</html>

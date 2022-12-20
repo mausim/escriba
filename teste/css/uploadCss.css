@@ -1,0 +1,30 @@
+/*----GRID UPLOAD --- */
+.claGridUpload {
+    display: grid;
+  grid-template-areas:
+  'adve adve adve adve'
+  'sigl sigl file subm';
+    gap: 1px;
+    background-color:#E8E8E8;/*grey*/
+    padding: 3px;
+  }
+  
+  .claGridUpload> div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+      padding: 10px;
+  
+  }
+.claUpAdver{
+grid-area:adve;
+}
+.claUpSigla{
+grid-area:sigl;
+}
+.claUpFile{
+grid-area:file;
+}
+.claUpSubmit{
+grid-area:subm;
+}
+/* -- fim do grid upload --*/

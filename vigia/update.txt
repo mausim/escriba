@@ -1,0 +1,7 @@
+Quantidade de elementos no array: 4 na sql: UPDATE tabexpedicao     
+    SET  obs= ?, status = ?, data_edicao = ?  
+    WHERE id = ?
+Valor da vez: 
+Valor da vez: 7
+Valor da vez: 15/11/2022 10:30:06
+Valor da vez: 4
